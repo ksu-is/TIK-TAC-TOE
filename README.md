@@ -11,4 +11,6 @@ In order to do this, we create game_on_first and game_on_second to see if any pl
 Besides, this will terminate the game immediately if one of the two players wins.
 
 4)When users choose to replay the game, change the answers to lowercase in case users enter “Y”, “N”
+5)Add another loop outside to check if players want to replay if no one wins the game after 9 moves.
+
 
