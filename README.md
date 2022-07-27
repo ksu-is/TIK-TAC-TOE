@@ -6,11 +6,14 @@ This will affect function replacement_choice() as userone is checked by seeing i
 2) In function gameon_choice2, add a parameter called playername. This is because this line of code:
 This line of code assumes that player one will always choose “x” as their symbol. In reality, player one can be “o”. The if statement then becomes:print("Game own! by " + playername + " ({})".format(checksym))
 
-3)Once game is over (either playerone or playertwo wins), ask if players want to replay the game. If the player chooses yes, reset the game, clear the board and play again.
+3) Once game is over (either playerone or playertwo wins), ask if players want to replay the game. If the player chooses yes, reset the game, clear the board and play again.
 In order to do this, we create game_on_first and game_on_second to see if any player wins or not. If game_on_first or game_on_second is false, which means one of 2 players win, we reset and ask players if they want to replay by calling playertwochoice()
 Besides, this will terminate the game immediately if one of the two players wins.
 
-4)When users choose to replay the game, change the answers to lowercase in case users enter “Y”, “N”
-5)Add another loop outside to check if players want to replay if no one wins the game after 9 moves.
+4) When users choose to replay the game, change the answers to lowercase in case users enter “Y”, “N”.
+
+5) Add another loop outside to check if players want to replay if no one wins the game after 9 moves.
+
+6) Move display_game function out of the loop. Only call display_game once in the loop so users don’t see two boards at the same time.
 
 
